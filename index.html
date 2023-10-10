@@ -1,120 +1,205 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>peliculas</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
 </head>
+
 <body>
 
     <header>
-        <nav>
-            <h1>Repelis</h1>
-            <ul>
-                
-                <li>Genero</li>
-                <li>Año de estreno</li>
-                <li>Idioma</li>
-                <li>Calidad</li>
-            </ul>
+        <nav class="navbar navbar-expand-lg bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand " href="#">Repelis</a>
+                <button class="navbar-toggler " type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Peliculas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Series</a>
+                        </li>
+
+                        <!-- -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">Idioma</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="">Español</a></li>
+                                <li><a class="dropdown-item" href="">Español <br> Latino</a></li>
+                                <li><a class="dropdown-item" href="">Ingles</a></li>
+                                <li><a class="dropdown-item" href="">Portugues</a></li>
+                                <li><a class="dropdown-item" href="">Ingles</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Genero
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Accion</a></li>
+                                <li><a class="dropdown-item" href="#">ciencia ficcion</a></li>
+                                <li><a class="dropdown-item" href="#">Terror</a></li>
+                                <li><a class="dropdown-item" href="#">Comedia</a></li>
+                                <li><a class="dropdown-item" href="#">Suspenso</a></li>
+                                <li><a class="dropdown-item" href="#">Romance</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Que estas buscando?"
+                            aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Buscar</button>
+                    </form>
+                </div>
+            </div>
         </nav>
     </header>
-   
+
 
     <main>
+        <!--
 
-        <h2 class="centrado">Recomendado de la semana</h2>
-        <div class="reco">
-            <div class="content">
+    <div class="bg-secondary">
+        <div class="container">
+            <div class="row">
+                <div class="content">
                 <img src="assets/img/1985.jpg" alt="1985">
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique nisi dicta illum quis fugit debitis nihil po</p>
-                <span>Descargar</span>
+                    <span>Descargar</span>
+                </div>
+                <div class="content">
+                    <img src="assets/img/creed.jpg" alt="creed 3">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae nulla velit assumenda earum sit, distinctio dig</p>
+                    <span>Descargar</span>
+                    <button>Descargar</button>
+                </div>
             </div>
-            <div class="content">
-                <img src="assets/img/creed.jpg" alt="creed 3">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae nulla velit assumenda earum sit, distinctio dig</p>
-                <span>Descargar</span>
+        </div>
+    </div>
+-->
+        <div class="bg-secondary mt-5 ">
+            <h1 class="text-center"> Recomendado</h1>
+            <div class="container card-reco">
+                <div class="row ">
+                    <div class="  text-center align-items-center bg-secondary ">
+                        <img class="card-img" src="assets/img/1985.jpg" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Descargar</a>
+                        </div>
+                    </div>
+                    <div class=" text-center align-items-center bg-secondary">
+                        <img class="card-img" src="assets/img/creed.jpg" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Descargar</a>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </div>
         </div>
 
 
-
-        <h1>Peliculas Recientes</h1>
-        <div class="cards">
-            
-            <div class="card">
-                <div class="content">
-                    <img src="assets/img/spider.jpg" alt="spider-man">
-                    <h4>Spiderman</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam similique vero aliquam inventore, quo voluiet? Obcaecati, labore!</p>
-                    <footer>Descargar</footer>
+        <div class=" container mt-5">
+            <h2 class="text-center">Peliculas Recientes</h1>
+            <div class="recientes cards">
+                <div class="card">
+                    <div class="content">
+                        <img src="assets/img/spider.jpg" alt="spider-man">
+                        <h4>Spiderman</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam similique vero aliquam inventore,
+                            quo voluiet? Obcaecati, labore!</p>
+                            <a href="#" class="btn btn-primary">Descargar</a>
+                    </div>
                 </div>
-            </div>
-            <div class="card">
-                <div class="content">
-                    <img src="assets/img/spider.jpg" alt="spider-man">
-                    <h4>Spiderman</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam similique vero aliquam inventore, quo voluiet? Obcaecati, labore!</p>
-                    <footer>Descargar</footer>
+                <div class="card">
+                    <div class="content">
+                        <img src="assets/img/spider.jpg" alt="spider-man">
+                        <h4>Spiderman</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam similique vero aliquam inventore,
+                            quo voluiet? Obcaecati, labore!</p>
+                            <a href="#" class="btn btn-primary">Descargar</a>
+                    </div>
                 </div>
-            </div>
-            <div class="card">
-                <div class="content">
-                    <img src="assets/img/spider.jpg" alt="spider-man">
-                    <h4>Spiderman</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam similique vero aliquam inventore, quo voluiet? Obcaecati, labore!</p>
-                    <footer>Descargar</footer>
+                <div class="card">
+                    <div class="content">
+                        <img src="assets/img/spider.jpg" alt="spider-man">
+                        <h4>Spiderman</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam similique vero aliquam inventore,
+                            quo voluiet? Obcaecati, labore!</p>
+                            <a href="#" class="btn btn-primary">Descargar</a>
+                    </div>
                 </div>
-            </div>
-            <div class="card">
-                <div class="content">
-                    <img src="assets/img/spider.jpg" alt="spider-man">
-                    <h4>Spiderman</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam similique vero aliquam inventore, quo voluiet? Obcaecati, labore!</p>
-                    <footer>Descargar</footer>
+                <div class="card">
+                    <div class="content">
+                        <img src="assets/img/spider.jpg" alt="spider-man">
+                        <h4>Spiderman</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam similique vero aliquam inventore,
+                            quo voluiet? Obcaecati, labore!</p>
+                            <a href="#" class="btn btn-primary">Descargar</a>
+                    </div>
                 </div>
-            </div>
-            <div class="card">
-                <div class="content">
-                    <img src="assets/img/spider.jpg" alt="spider-man">
-                    <h4>Spiderman</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam similique vero aliquam inventore, quo voluiet? Obcaecati, labore!</p>
-                    <footer>Descargar</footer>
+                <div class="card">
+                    <div class="content">
+                        <img src="assets/img/spider.jpg" alt="spider-man">
+                        <h4>Spiderman</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam similique vero aliquam inventore,
+                            quo voluiet? Obcaecati, labore!</p>
+                            <a href="#" class="btn btn-primary">Descargar</a>
+                    </div>
                 </div>
-            </div>
-            <div class="card">
-                <div class="content">
-                    <img src="assets/img/spider.jpg" alt="spider-man">
-                    <h4>Spiderman</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam similique vero aliquam inventore, quo voluiet? Obcaecati, labore!</p>
-                    <footer>Descargar</footer>
+                <div class="card">
+                    <div class="content">
+                        <img src="assets/img/spider.jpg" alt="spider-man">
+                        <h4>Spiderman</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam similique vero aliquam inventore,
+                            quo voluiet? Obcaecati, labore!</p>
+                            <a href="#" class="btn btn-primary">Descargar</a>
+                    </div>
                 </div>
-            </div>
-            <div class="card">
-                <div class="content">
-                    <img src="assets/img/spider.jpg" alt="spider-man">
-                    <h4>Spiderman</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam similique vero aliquam inventore, quo voluiet? Obcaecati, labore!</p>
-                    <footer>Descargar</footer>
+                <div class="card">
+                    <div class="content">
+                        <img src="assets/img/spider.jpg" alt="spider-man">
+                        <h4>Spiderman</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam similique vero aliquam inventore,
+                            quo voluiet? Obcaecati, labore!</p>
+                            <a href="#" class="btn btn-primary">Descargar</a>
+                    </div>
                 </div>
-            </div>
-            <div class="card">
-                <div class="content">
-                    <img src="assets/img/spider.jpg" alt="spider-man">
-                    <h4>Spiderman</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam similique vero aliquam inventore, quo voluiet? Obcaecati, labore!</p>
-                    <footer>Descargar</footer>
+                <div class="card">
+                    <div class="content">
+                        <img src="assets/img/spider.jpg" alt="spider-man">
+                        <h4>Spiderman</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam similique vero aliquam inventore,
+                            quo voluiet? Obcaecati, labore!</p>
+                            <a href="#" class="btn btn-primary">Descargar</a>
+                    </div>
                 </div>
+    
+    
+    
             </div>
-             
-
-            
         </div>
     </main>
 
-    
+
 
     <footer class="fut">
         <div class="container">
@@ -125,7 +210,7 @@
                         <li><a href="#">Nosotros</a></li>
                         <li><a href="#">Nuestros servicios</a></li>
                         <li><a href="#">Politicas de privacidad</a></li>
-                        
+
                     </ul>
                 </div>
                 <div class="footer-links">
@@ -156,8 +241,8 @@
                         <li><a href="#">Ciencia Ficion</a></li>
                     </ul>
                 </div>
-                
-                
+
+
                 <div class="footer-links">
                     <h4>Siguenos</h4>
                     <div class="social-link">
@@ -165,9 +250,11 @@
                         <a href=""><i class="fab fa-instagram"></i></a>
                         <a href=""><i class="fab fa-twitter"></i></a>
                         <a href=""><i class="fab fa-linkedin"></i></a>
-                    </div>                
+                    </div>
+                </div>
             </div>
-        </div>
     </footer>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
