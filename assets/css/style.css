@@ -67,7 +67,7 @@ div footer{
 
 /*foooter inferior*/
 footer .container{
-    max-width: 1200px;
+    max-width: 1800px;
     margin: 0;
 }
 .fut{
@@ -81,7 +81,7 @@ footer .container{
 }
 
 .footer-links {
-    width: 25%;
+    width: 20%;
     padding: 0 15px;
 }
 

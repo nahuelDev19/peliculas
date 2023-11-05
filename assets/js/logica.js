@@ -5,3 +5,7 @@ while(nombre===null || nombre.trim() === "" ){
     }
 
 alert(`hola ${nombre} te damos la bienvenida a repelis.`)
+
+function papa(){
+    alert("no disponible");
+}
