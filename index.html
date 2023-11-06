@@ -73,7 +73,7 @@
         <div class="bg-secondary mt-2 container">
             <h1 class="text-center"> Recomendado</h1>
             <div class="container card-reco">
-                <div class="row ">
+                <div class="recomen">
                     <div class="  text-center align-items-center bg-secondary ">
                         <img class="card-img" src="assets/img/1985.jpg" alt="...">
                         <div class="card-body">
@@ -186,6 +186,50 @@
 
                 </div>
         </div>
+
+  
+        <section class="container mt-3">
+            <div class="row g-1">
+                  <div class="col-6">
+                    <button type="reset" id="mostrarFormulario" class="btn btn-secondary col-12">Mostrar Formulario</button>
+                  </div>
+                  <!-- id resultado-->
+                  <div class="col-6 mb-2">
+                    <button id="ocultarFormulario" type="button" class="btn btn-secondary col-12">Ocultar Formulario</button>           
+                  </div>
+            </div>
+            <form  class="w-75 mx-auto" id="formu">     
+                
+                <div class="row g-1">
+                    <!-- inputs del formulario-->
+                    <div class="col-6 margin-bottom">
+                      <input type="text" id="nombre" class="form-control" placeholder="Nombre" min="4" required />              
+                    </div>
+        
+                    <div class="col-6 margin-bottom">
+                      <input type="text" id="apellido" class="form-control" placeholder="Apellido" min="4" required/>  
+                    </div>            
+                    
+                    <div class="col-12 margin-bottom">
+                      <input type="email" id="correo" class="form-control" placeholder="Correo" required/>              
+                    </div>            
+                    
+                    <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label"></label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="feedback"></textarea>
+                    </div>
+                    <!--botones del formulario-->
+                    <div class="col-6">
+                      <button type="reset" class="btn btn-primary custom-btn col-12">Borrar</button>
+                    </div>
+                    <div class="col-6">
+                      <button id="resultado" type="button" class="btn btn-primary custom-btn col-12">Enviar</button>           
+                    </div>
+                </div>
+                           
+                              
+            </form>
+        </section>
         
     </main>
     

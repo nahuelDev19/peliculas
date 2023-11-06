@@ -1,3 +1,4 @@
+
 let nombre= prompt("cual es tu nombre?")
 
 while(nombre===null || nombre.trim() === "" ){
@@ -6,6 +7,15 @@ while(nombre===null || nombre.trim() === "" ){
 
 alert(`hola ${nombre} te damos la bienvenida a repelis.`)
 
-function mostrar(){
-    document.getElementById('miForm').style.display='block'
-}
+
+const mostrarBoton= document.getElementById('mostrarFormulario');
+const ocultarBoton= document.getElementById('ocultarFormulario');
+const Formu= document.getElementById('formu');
+
+
+mostrarBoton.addEventListener('click', function() {
+    Formu.style.display='block'
+});
+ocultarBoton.addEventListener('click', function() {
+    Formu.style.display='none'
+});
