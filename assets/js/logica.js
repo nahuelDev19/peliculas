@@ -1,4 +1,3 @@
-
 let nombre= prompt("cual es tu nombre?")
 
 while(nombre===null || nombre.trim() === "" ){
@@ -19,3 +18,4 @@ mostrarBoton.addEventListener('click', function() {
 ocultarBoton.addEventListener('click', function() {
     Formu.style.display='none'
 });
+

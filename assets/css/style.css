@@ -61,6 +61,15 @@ div footer{
 }
 
 
+/*detalles de las cards*/
+
+h4{
+    color: azure;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-top: 1rem;
+}
 
 
 
